@@ -137,7 +137,7 @@ let createElement =
 
           Some(
             () =>
-              if (isCaptured) {
+              if (!isCaptured) {
                 Mouse.releaseCapture();
               },
           );
